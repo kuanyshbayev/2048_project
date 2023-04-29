@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #cec083;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  --cell-size: 100px;
+  --cell-gap: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell-size));
+  grid-template-rows: repeat(4, var(--cell-size));
+  gap: var(--cell-gap);
+  border-radius: 10px;
+}
+
+.cell {
+  background-color: #6b482d;
+  border-radius: 10px;
+}
+
+.tile {
+  position: absolute;
+  top: calc(0 * (100px + 10px));
+  left: calc(0 * (100px + 10px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 60px;
+  background-color: white;
+  color: black;
+}
