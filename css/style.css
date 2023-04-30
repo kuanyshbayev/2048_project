@@ -17,10 +17,17 @@ body {
   width: 300px;
   background-color: yellow;
   position: absolute;
-  top: 150px;
-  color: blue;
-  border-radius: 20px
+  left: 400px;
+  top: 350px;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
 
+}
+
+.timer{
+  
+  font-size: 30px;
 }
 
 #game-board {
